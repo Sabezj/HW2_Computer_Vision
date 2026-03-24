@@ -1,0 +1,3 @@
+name,patch,depth,dim,heads,use_cls,params,seq_len,attn_mem_mb,approx_ops,val_acc
+vit_p8_d2_dim128_cls,8,2,128,4,True,422922,65,0.064,5341440,0.5966
+vit_p16_d3_dim192_mean,16,3,192,6,False,1484554,16,0.006,2457600,0.532
