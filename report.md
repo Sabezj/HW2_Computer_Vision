@@ -109,9 +109,9 @@ Each query is intended to represent one potential object hypothesis.
 The main tensors in the model can be described as follows:
 
 #### Visual feature tokens
-\[
+$$
 B \times T \times D
-\]
+$$
 
 where:
 - `B` = batch size
@@ -119,40 +119,40 @@ where:
 - `D` = hidden dimension
 
 #### Object queries
-\[
+$$
 B \times Q \times D
-\]
+$$
 
 where:
 - `Q` = number of learnable object queries
 
 #### Decoder output
-\[
+$$
 B \times Q \times D
-\]
+$$
 
 Each query is updated by attending to the image features.
 
 #### Box prediction
-\[
+$$
 B \times Q \times 4
-\]
+$$
 
 #### Objectness / class prediction
-\[
+$$
 B \times Q \times 1
-\]
+$$
 or
-\[
+$$
 B \times Q \times C
-\]
+$$
 
 depending on the head design.
 
 #### Mask prediction
-\[
+$$
 B \times Q \times H \times W
-\]
+$$
 
 ### 3.4 How a query becomes an object prediction
 
